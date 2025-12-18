@@ -24,7 +24,7 @@ st.write("The name on your Smoothie will be: ", name_on_order)
 
 #The below code is to import statement close to where plan to use it. 
 #Display the Fruit Options List in the Streamlit in Snowflake (SiS) App.
-session = get_active_session()
+#session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('Fruit_name'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
 
